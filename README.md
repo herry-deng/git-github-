@@ -33,7 +33,6 @@ git push -u origin master
 执行完后，如果没有异常，等待执行完就上传成功了，中间可能会让你输入Username和Password，你只要输入github的账号和密码就行了
 
 
-
 …or create a new repository on the command line
 echo "# test-demo" >> README.md
 git init
@@ -42,11 +41,6 @@ git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/herry-deng/test-demo.git
 git push -u origin master
-
-
-
-
-
 
 
 …or push an existing repository from the command line
