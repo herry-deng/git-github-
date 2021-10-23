@@ -1,0 +1,55 @@
+使用 % 操作符，计算11除以3剩下的余数，并把余数赋给变量remainder。
+var remainder = 11 % 3;
+
+常见的运算赋值语句，先运算、再赋值。
+还有一类操作符是一步到位合并了运算与赋值的操作。
+这类运算符的其中一种就是 += 运算符。myVar += 5; 也是把数值 5 加到变量 myVar上。
+var a = 3;
+var b = 17;
+var c = 12;
+// Only modify code below this line
+a+= 12;
+b+= 9;
+c+= 7;
+
+将会从变量 myVar 中减去数值 5。
+
+也可以写成这种形式：
+
+myVar -= 5;
+*= 运算符是让变量与一个数相乘并赋值。
+myVar = myVar * 5;
+
+将会把变量 myVar 与数值 5相乘并赋值。
+也可以写作这样的形式:
+myVar *= 5;
+
+在 JavaScript 中的 字符串 要用单引号或双引号来包裹它，只要你在开始和结束都使用相同类型的引号，单引号和双引号的功能在JavaScript中是相同的。
+"This string has \"double quotes\" in it"
+当我们需要在字符串中使用与开头结尾相同的引号时，我们需要对引号进行 转义 。如果你有很多双引号的字符串，使用转义字符可能导致难以阅读。这时候可以使用单引号。
+'This string has "double quotes" in it. And "probably" lots of them.'
+任务
+更改myStr字符串用于开始和结束的双引号为单引号，并移除转义符号。var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+按照下面的顺序，并且用空格来分割：
+反斜杠 制表符 回车符 换行符 并把它赋值给变量 myStr
+注意：请使用双引号包含内容，并且注意内容前后不要留有非必要的空格
+var myStr = "\\ \t \r \n";
+
+我们还可以使用 += 运算符来将字符串 连接 到现有字符串变量的末尾。对于那些非常长的字符串来说，这是十分有用的。
+
+连接运算符 + ，你可以插入一个或多个变量来组成一个字符串
+
+可以使用加等号(+=)运算符来追加变量到字符串上 加到后面
+
+你可以通过在字符串变量或字符串后面写上 .length 来获得变量中string （字符串）值的长度。
+"Alan Peter".length; // 10
+例如，我们创建了一个变量 var firstName = "Charles"，我们就可以通过使用 firstName.length 来获得 "Charles" 字符串的长度。
+
+为了得到一个字符串的最后一个字符，你可以获取该字符串的长度并减一来作为最后一个字符的索引。
+
+例如，在 var firstName = "Charles" 中，你可以这样操作 firstName[firstName.length - 1] 来得到字符串的最后的一个字符。
+
+你可以这样 firstName[firstName.length - 3] 操作来获得 var firstName = "Charles" 字符串中的倒数第三个字符。
+
+可以把 多维 数组理解成是一个 数组中的数组。当使用[]去访问数组的时候，第一个[index]访问的是该数组中的第N个子数组，第二个[index]访问的是第N个子数组的第N个元素。
